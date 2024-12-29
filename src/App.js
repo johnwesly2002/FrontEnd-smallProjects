@@ -7,6 +7,7 @@ import MemoExample from './memoExample';
 import TodoLocal from './TodoLocal';
 import AccordianExample from './Accordian/AccordianExample';
 import ExpensesTracker from './ExpensesTracker';
+import ListDeleteExample from './ListDeleteExample';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <div><Link to='/Todo'>Go To TodoList</Link></div>
         <div><Link to='/Accordian'>Go To Accordian Example</Link></div>
         <div><Link to='/ExpensesTracker'>Go to ExpensesTracker</Link></div>
+        <div><Link to='/ListDeleteExample'>Go to ListDeleteExample</Link></div>
       </div>,
     },
     {
@@ -47,6 +49,10 @@ function App() {
       path: '/ExpensesTracker',
       element: <ExpensesTracker />,
     },
+    {
+      path: '/ListDeleteExample',
+      element: <ListDeleteExample />
+    }
   ]);
   return (
     <div className='App'>
