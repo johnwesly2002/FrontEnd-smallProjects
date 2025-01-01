@@ -8,7 +8,7 @@ import TodoLocal from './TodoLocal';
 import AccordianExample from './Accordian/AccordianExample';
 import ExpensesTracker from './ExpensesTracker';
 import ListDeleteExample from './ListDeleteExample';
-
+import TodoWithEdit from './TodoWithEdit';
 
 function App() {
   const[count, setCount] = useState(0);
@@ -23,6 +23,8 @@ function App() {
         <div><Link to='/Accordian'>Go To Accordian Example</Link></div>
         <div><Link to='/ExpensesTracker'>Go to ExpensesTracker</Link></div>
         <div><Link to='/ListDeleteExample'>Go to ListDeleteExample</Link></div>
+        <div><Link to='/TodoWithEdit'>Go to TodoWithEdit</Link></div>
+
       </div>,
     },
     {
@@ -52,6 +54,10 @@ function App() {
     {
       path: '/ListDeleteExample',
       element: <ListDeleteExample />
+    },
+    {
+      path: '/TodoWithEdit',
+      element: <TodoWithEdit />
     }
   ]);
   return (
