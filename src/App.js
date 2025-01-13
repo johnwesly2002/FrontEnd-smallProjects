@@ -9,7 +9,8 @@ import AccordianExample from './Accordian/AccordianExample';
 import ExpensesTracker from './ExpensesTracker';
 import ListDeleteExample from './ListDeleteExample';
 import TodoWithEdit from './TodoWithEdit';
-
+import TableSearch from './TableSearch/TableSearch';
+import FormSubmit from './FormSubmit/FormSubmit';
 function App() {
   const[count, setCount] = useState(0);
   const router = createBrowserRouter([
@@ -24,6 +25,9 @@ function App() {
         <div><Link to='/ExpensesTracker'>Go to ExpensesTracker</Link></div>
         <div><Link to='/ListDeleteExample'>Go to ListDeleteExample</Link></div>
         <div><Link to='/TodoWithEdit'>Go to TodoWithEdit</Link></div>
+        <div><Link to='/TableSearch'>Go to TableSearch</Link></div>
+        <div><Link to='/FormSubmit'>Go to FormSubmit</Link></div>
+
 
       </div>,
     },
@@ -58,6 +62,14 @@ function App() {
     {
       path: '/TodoWithEdit',
       element: <TodoWithEdit />
+    },
+    {
+      path: '/TableSearch',
+      element: <TableSearch />
+    },
+    {
+      path: '/FormSubmit',
+      element: <FormSubmit />
     }
   ]);
   return (
