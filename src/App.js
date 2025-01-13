@@ -11,6 +11,7 @@ import ListDeleteExample from './ListDeleteExample';
 import TodoWithEdit from './TodoWithEdit';
 import TableSearch from './TableSearch/TableSearch';
 import FormSubmit from './FormSubmit/FormSubmit';
+import MaxCount from './maxCount/MaxCount';
 function App() {
   const[count, setCount] = useState(0);
   const router = createBrowserRouter([
@@ -26,7 +27,7 @@ function App() {
         <div><Link to='/ListDeleteExample'>Go to ListDeleteExample</Link></div>
         <div><Link to='/TodoWithEdit'>Go to TodoWithEdit</Link></div>
         <div><Link to='/TableSearch'>Go to TableSearch</Link></div>
-        <div><Link to='/FormSubmit'>Go to FormSubmit</Link></div>
+        <div><Link to='/MaxCount'>Go to MaxCount</Link></div>
 
 
       </div>,
@@ -70,6 +71,10 @@ function App() {
     {
       path: '/FormSubmit',
       element: <FormSubmit />
+    },
+    {
+      path: '/MaxCount',
+      element: <MaxCount />
     }
   ]);
   return (
