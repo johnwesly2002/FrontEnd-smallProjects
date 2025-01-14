@@ -15,6 +15,7 @@ import MaxCount from './maxCount/MaxCount';
 import CssExample from './cssExample/CssExample';
 import UseReducerCounterApp from './UseReducerCounterApp/UseReducerCounterApp';
 import UseReducerFormData from './UseReducerFormData/UseReducerFormData';
+import TodoWithReducer from './TodoWithuseReducer/TodoWithReducer';
 function App() {
   const[count, setCount] = useState(0);
   const router = createBrowserRouter([
@@ -34,6 +35,8 @@ function App() {
         <div><Link to='/CssExample'>Go to CssExample</Link></div>
         <div><Link to='/UseReducerCounterApp'>Go to UseReducerCounterApp</Link></div>
         <div><Link to='/UseReducerFormData'>Go to UseReducerFormData</Link></div>
+        <div><Link to='/TodoWithReducer'>Go to TodoWithReducer</Link></div>
+
 
         
       </div>,
@@ -93,6 +96,10 @@ function App() {
     {
       path: '/UseReducerFormData',
       element: <UseReducerFormData />
+    },
+    {
+      path: '/TodoWithReducer',
+      element: <TodoWithReducer />
     }
   ]);
   return (
