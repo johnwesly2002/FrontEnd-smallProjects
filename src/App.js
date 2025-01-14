@@ -12,6 +12,9 @@ import TodoWithEdit from './TodoWithEdit';
 import TableSearch from './TableSearch/TableSearch';
 import FormSubmit from './FormSubmit/FormSubmit';
 import MaxCount from './maxCount/MaxCount';
+import CssExample from './cssExample/CssExample';
+import UseReducerCounterApp from './UseReducerCounterApp/UseReducerCounterApp';
+import UseReducerFormData from './UseReducerFormData/UseReducerFormData';
 function App() {
   const[count, setCount] = useState(0);
   const router = createBrowserRouter([
@@ -28,8 +31,11 @@ function App() {
         <div><Link to='/TodoWithEdit'>Go to TodoWithEdit</Link></div>
         <div><Link to='/TableSearch'>Go to TableSearch</Link></div>
         <div><Link to='/MaxCount'>Go to MaxCount</Link></div>
+        <div><Link to='/CssExample'>Go to CssExample</Link></div>
+        <div><Link to='/UseReducerCounterApp'>Go to UseReducerCounterApp</Link></div>
+        <div><Link to='/UseReducerFormData'>Go to UseReducerFormData</Link></div>
 
-
+        
       </div>,
     },
     {
@@ -75,6 +81,18 @@ function App() {
     {
       path: '/MaxCount',
       element: <MaxCount />
+    },
+    {
+      path: '/CssExample',
+      element: <CssExample />
+    },
+    {
+      path: '/UseReducerCounterApp',
+      element: <UseReducerCounterApp />
+    },
+    {
+      path: '/UseReducerFormData',
+      element: <UseReducerFormData />
     }
   ]);
   return (
