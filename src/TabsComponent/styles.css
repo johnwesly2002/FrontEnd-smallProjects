@@ -1,0 +1,17 @@
+button {
+  background-color: lightgrey;
+  width: 200px;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: gray;
+}
+
+span{
+  font-size: 20px;
+  font-weight: 500;
+}

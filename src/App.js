@@ -16,6 +16,7 @@ import CssExample from './cssExample/CssExample';
 import UseReducerCounterApp from './UseReducerCounterApp/UseReducerCounterApp';
 import UseReducerFormData from './UseReducerFormData/UseReducerFormData';
 import TodoWithReducer from './TodoWithuseReducer/TodoWithReducer';
+import TabsComponent from './TabsComponent/TabsComponent';
 function App() {
   const[count, setCount] = useState(0);
   const router = createBrowserRouter([
@@ -36,7 +37,9 @@ function App() {
         <div><Link to='/UseReducerCounterApp'>Go to UseReducerCounterApp</Link></div>
         <div><Link to='/UseReducerFormData'>Go to UseReducerFormData</Link></div>
         <div><Link to='/TodoWithReducer'>Go to TodoWithReducer</Link></div>
+        <div><Link to='/TabsComponent'>Go to TabsComponent</Link></div>
 
+        
 
         
       </div>,
@@ -100,6 +103,10 @@ function App() {
     {
       path: '/TodoWithReducer',
       element: <TodoWithReducer />
+    },
+    {
+      path: '/TabsComponent',
+      element: <TabsComponent />
     }
   ]);
   return (
