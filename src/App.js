@@ -1,6 +1,6 @@
 import './App.css';
 import Counter from './counter';
-import {useState} from 'react';
+import {createContext, useState} from 'react';
 import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
 import BasicForm from './form';
 import MemoExample from './memoExample';
@@ -18,6 +18,9 @@ import UseReducerFormData from './UseReducerFormData/UseReducerFormData';
 import TodoWithReducer from './TodoWithuseReducer/TodoWithReducer';
 import TabsComponent from './TabsComponent/TabsComponent';
 import LocalStorageCounter from './LocalStorageCounter/LocalStorageCounter';
+import ThemeChangeProject from './ThemeChangeProject/ThemeChangeProject';
+
+export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
   const router = createBrowserRouter([
@@ -40,6 +43,7 @@ function App() {
         <div><Link to='/TodoWithReducer'>Go to TodoWithReducer</Link></div>
         <div><Link to='/TabsComponent'>Go to TabsComponent</Link></div>
         <div><Link to='/LocalStorageCounter'>Go to LocalStorageCounter</Link></div>
+        <div><Link to='/ThemeChangeProject'>Go to ThemeChangeProject</Link></div>
 
 
         
@@ -114,12 +118,19 @@ function App() {
     {
       path: '/LocalStorageCounter',
       element: <LocalStorageCounter />
+    },
+    {
+      path: '/ThemeChangeProject',
+      element: <ThemeChangeProject />
     }
   ]);
+  const [Theme, setTheme] = useState("light");
   return (
+    <ThemeContext.Provider value={[Theme, setTheme]}>
     <div className='App'>
     <RouterProvider router={router} />
     </div>
+    </ThemeContext.Provider>
   );
 }
 
