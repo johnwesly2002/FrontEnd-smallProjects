@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import "./styles.css";
+import "./Tabsstyles.css";
 
 const TabsComponent = () => {
     const [View, setView] = useState("Person");
@@ -7,10 +7,10 @@ const TabsComponent = () => {
     <div style={{ display: 'flex',justifyContent:'center', alignItems: 'center', flexDirection: 'column'}}>
         <h1>Tabs Component</h1>
       <div style={{ display: "flex", flexDirection: "row", borderBottom: "1px solid grey" }}>
-        <button onClick={() => setView("Person")} >
+        <button className="button" onClick={() => setView("Person")} >
           Person
         </button>
-        <button  onClick={() => setView("Address")} >
+        <button  className="button" onClick={() => setView("Address")} >
           Address
         </button>
       </div>
