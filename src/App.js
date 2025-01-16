@@ -19,7 +19,7 @@ import TodoWithReducer from './TodoWithuseReducer/TodoWithReducer';
 import TabsComponent from './TabsComponent/TabsComponent';
 import LocalStorageCounter from './LocalStorageCounter/LocalStorageCounter';
 import ThemeChangeProject from './ThemeChangeProject/ThemeChangeProject';
-
+import SimpleCartProject from './SimpleCartProject/SimpleCartProject';
 export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
@@ -44,6 +44,7 @@ function App() {
         <div><Link to='/TabsComponent'>Go to TabsComponent</Link></div>
         <div><Link to='/LocalStorageCounter'>Go to LocalStorageCounter</Link></div>
         <div><Link to='/ThemeChangeProject'>Go to ThemeChangeProject</Link></div>
+        <div><Link to='/SimpleCartProject'>Go to SimpleCartProject</Link></div>
 
 
         
@@ -122,6 +123,10 @@ function App() {
     {
       path: '/ThemeChangeProject',
       element: <ThemeChangeProject />
+    },
+    {
+      path: '/SimpleCartProject',
+      element: <SimpleCartProject />
     }
   ]);
   const [Theme, setTheme] = useState("light");
