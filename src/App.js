@@ -23,6 +23,7 @@ import SimpleCartProject from './SimpleCartProject/SimpleCartProject';
 import ButtonTestExample from './ButtonTestExample/ButtonTestExample';
 import ListwithLoadMoreButton from './ListwithLoadMoreButton/ListwithLoadMoreButton';
 import AccordianReact from './AccordianReact/AccordianReact';
+import MemoryGame from './MemoryGame/MemoryGame';
 export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
@@ -51,6 +52,7 @@ function App() {
         <div><Link to='/ButtonTestExample'>Go to ButtonTestExample</Link></div>
         <div><Link to='/ListwithLoadMoreButton'>Go to ListwithLoadMoreButton</Link></div>
         <div><Link to='/AccordianReact'>Go to AccordianReact</Link></div>
+        <div><Link to='/MemoryGame'>Go to MemoryGame</Link></div>
 
 
         
@@ -145,6 +147,10 @@ function App() {
     {
       path: '/AccordianReact',
       element: <AccordianReact />
+    },
+    {
+      path: '/MemoryGame',
+      element: <MemoryGame />
     }
   ]);
   const [Theme, setTheme] = useState("light");
