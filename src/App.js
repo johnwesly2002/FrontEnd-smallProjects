@@ -20,6 +20,7 @@ import TabsComponent from './TabsComponent/TabsComponent';
 import LocalStorageCounter from './LocalStorageCounter/LocalStorageCounter';
 import ThemeChangeProject from './ThemeChangeProject/ThemeChangeProject';
 import SimpleCartProject from './SimpleCartProject/SimpleCartProject';
+import ButtonTestExample from './ButtonTestExample/ButtonTestExample';
 export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
@@ -45,6 +46,7 @@ function App() {
         <div><Link to='/LocalStorageCounter'>Go to LocalStorageCounter</Link></div>
         <div><Link to='/ThemeChangeProject'>Go to ThemeChangeProject</Link></div>
         <div><Link to='/SimpleCartProject'>Go to SimpleCartProject</Link></div>
+        <div><Link to='/ButtonTestExample'>Go to ButtonTestExample</Link></div>
 
 
         
@@ -127,6 +129,10 @@ function App() {
     {
       path: '/SimpleCartProject',
       element: <SimpleCartProject />
+    },
+    {
+      path: '/ButtonTestExample',
+      element: <ButtonTestExample />
     }
   ]);
   const [Theme, setTheme] = useState("light");
