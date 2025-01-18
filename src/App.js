@@ -22,6 +22,7 @@ import ThemeChangeProject from './ThemeChangeProject/ThemeChangeProject';
 import SimpleCartProject from './SimpleCartProject/SimpleCartProject';
 import ButtonTestExample from './ButtonTestExample/ButtonTestExample';
 import ListwithLoadMoreButton from './ListwithLoadMoreButton/ListwithLoadMoreButton';
+import AccordianReact from './AccordianReact/AccordianReact';
 export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
@@ -49,6 +50,7 @@ function App() {
         <div><Link to='/SimpleCartProject'>Go to SimpleCartProject</Link></div>
         <div><Link to='/ButtonTestExample'>Go to ButtonTestExample</Link></div>
         <div><Link to='/ListwithLoadMoreButton'>Go to ListwithLoadMoreButton</Link></div>
+        <div><Link to='/AccordianReact'>Go to AccordianReact</Link></div>
 
 
         
@@ -139,6 +141,10 @@ function App() {
     {
       path: '/ListwithLoadMoreButton',
       element: <ListwithLoadMoreButton />
+    },
+    {
+      path: '/AccordianReact',
+      element: <AccordianReact />
     }
   ]);
   const [Theme, setTheme] = useState("light");
