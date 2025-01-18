@@ -1,0 +1,32 @@
+.headingText{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+.MainContainer{
+    height: 100vh;
+}
+.ImageCard {
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+    border-radius: 8px; 
+  }
+  
+  .ImageCard img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
+  }
+  
+  .imageContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 5px
+  }
+  
