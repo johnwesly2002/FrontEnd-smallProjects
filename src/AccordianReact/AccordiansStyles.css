@@ -1,0 +1,33 @@
+.headerName{
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+.mainContainer{
+    height: 100vh;
+    margin: 0;   
+}
+.AccordianContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AccordianInner{
+    height: 100px;
+    width: 500px;
+    transition: height 1.5s ease;
+}
+.AccordianOuter{
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 2px;
+    height:50px;
+    width: 500px;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+}
+.TitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
