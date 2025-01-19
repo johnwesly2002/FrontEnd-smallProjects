@@ -32,7 +32,7 @@ const handleCardClick = (index) => {
         } else {
           setTimeout(() => setFlippedCards([]), 1000);
         }
-      }
+      } 
     }
   };
   return (

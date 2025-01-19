@@ -24,6 +24,7 @@ import ButtonTestExample from './ButtonTestExample/ButtonTestExample';
 import ListwithLoadMoreButton from './ListwithLoadMoreButton/ListwithLoadMoreButton';
 import AccordianReact from './AccordianReact/AccordianReact';
 import MemoryGame from './MemoryGame/MemoryGame';
+import NotesApp from './NotesApp/NotesApp';
 export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
@@ -53,6 +54,7 @@ function App() {
         <div><Link to='/ListwithLoadMoreButton'>Go to ListwithLoadMoreButton</Link></div>
         <div><Link to='/AccordianReact'>Go to AccordianReact</Link></div>
         <div><Link to='/MemoryGame'>Go to MemoryGame</Link></div>
+        <div><Link to='/NotesApp'>Go to NotesApp</Link></div>
 
 
         
@@ -151,6 +153,10 @@ function App() {
     {
       path: '/MemoryGame',
       element: <MemoryGame />
+    },
+    {
+      path: '/NotesApp',
+      element: <NotesApp />
     }
   ]);
   const [Theme, setTheme] = useState("light");
