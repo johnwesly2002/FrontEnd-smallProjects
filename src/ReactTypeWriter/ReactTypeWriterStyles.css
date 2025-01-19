@@ -1,0 +1,9 @@
+.headingText{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+}
+.mainContainer{
+    height: 100vh;
+}
