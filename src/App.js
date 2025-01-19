@@ -26,6 +26,7 @@ import AccordianReact from './AccordianReact/AccordianReact';
 import MemoryGame from './MemoryGame/MemoryGame';
 import NotesApp from './NotesApp/NotesApp';
 import TodoDragDrop from './TodoDragDrop/TodoDragDrop';
+import ReactTypeWriter from './ReactTypeWriter/ReactTypeWriter';
 export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
@@ -57,6 +58,7 @@ function App() {
         <div><Link to='/MemoryGame'>Go to MemoryGame</Link></div>
         <div><Link to='/NotesApp'>Go to NotesApp</Link></div>
         <div><Link to='/TodoDragDrop'>Go to TodoDragDrop</Link></div>
+        <div><Link to='/ReactTypeWriter'>Go to ReactTypeWriter</Link></div>
 
 
         
@@ -163,6 +165,10 @@ function App() {
     {
       path: '/TodoDragDrop',
       element: <TodoDragDrop />
+    },
+    {
+      path: '/ReactTypeWriter',
+      element: <ReactTypeWriter />
     }
   ]);
   const [Theme, setTheme] = useState("light");
