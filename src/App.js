@@ -25,6 +25,7 @@ import ListwithLoadMoreButton from './ListwithLoadMoreButton/ListwithLoadMoreBut
 import AccordianReact from './AccordianReact/AccordianReact';
 import MemoryGame from './MemoryGame/MemoryGame';
 import NotesApp from './NotesApp/NotesApp';
+import TodoDragDrop from './TodoDragDrop/TodoDragDrop';
 export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
@@ -55,6 +56,7 @@ function App() {
         <div><Link to='/AccordianReact'>Go to AccordianReact</Link></div>
         <div><Link to='/MemoryGame'>Go to MemoryGame</Link></div>
         <div><Link to='/NotesApp'>Go to NotesApp</Link></div>
+        <div><Link to='/TodoDragDrop'>Go to TodoDragDrop</Link></div>
 
 
         
@@ -157,6 +159,10 @@ function App() {
     {
       path: '/NotesApp',
       element: <NotesApp />
+    },
+    {
+      path: '/TodoDragDrop',
+      element: <TodoDragDrop />
     }
   ]);
   const [Theme, setTheme] = useState("light");
