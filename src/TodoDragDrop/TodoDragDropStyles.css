@@ -1,0 +1,24 @@
+.headingText{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+.SectionText{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+.mainContainer{
+    height: 100vh;
+    margin: 0;
+}
+.TodoBoard{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}
+.container{
+    height: 5vh;
+    border: 1px dashed black;
+    margin: 5px;
+    width: 200px;
+}
