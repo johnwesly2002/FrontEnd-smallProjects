@@ -1,0 +1,30 @@
+.headingText{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+}
+.mainContainer{
+     height: 100vh;
+     overflow: 'auto'
+}
+.ImageContainer{
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+    border-radius: 8px;
+}
+.productsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+}
+.ImageContainer img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
