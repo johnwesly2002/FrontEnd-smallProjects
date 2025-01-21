@@ -28,6 +28,7 @@ import NotesApp from './NotesApp/NotesApp';
 import TodoDragDrop from './TodoDragDrop/TodoDragDrop';
 import ReactTypeWriter from './ReactTypeWriter/ReactTypeWriter';
 import InfiniteScrollListExample from './InfiniteScrollListExample/InfiniteScrollListExample';
+import CursorMoveApp from './CursorMoveApp/CursorMoveApp';
 export const ThemeContext = createContext();
 function App() {
   const[count, setCount] = useState(0);
@@ -61,9 +62,10 @@ function App() {
         <div><Link to='/TodoDragDrop'>Go to TodoDragDrop</Link></div>
         <div><Link to='/ReactTypeWriter'>Go to ReactTypeWriter</Link></div>
         <div><Link to='/InfiniteScrollListExample'>Go to InfiniteScrollListExample</Link></div>
+        <div><Link to='/CursorMoveApp'>Go to CursorMoveApp</Link></div>
 
 
-
+        
         
         
         
@@ -176,6 +178,10 @@ function App() {
     {
       path: '/InfiniteScrollListExample',
       element: <InfiniteScrollListExample />
+    },
+    {
+      path: '/CursorMoveApp',
+      element: <CursorMoveApp />
     }
   ]);
   const [Theme, setTheme] = useState("light");
